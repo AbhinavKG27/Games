@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    background: linear-gradient(135deg, #364e72, #223449);
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.choice {
+    height: 165px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #f8f9fc;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
+    transform: scale(1); /* baseline */
+}
+
+.choice:hover {
+    transform: scale(1.08);
+    opacity: 0.95;
+    cursor: pointer;
+    border: 6px solid #365475;
+    box-shadow: 0 12px 22px rgba(0,0,0,0.25);
+}
+
+.choice:active {
+    transform: scale(0.92); /* shrink slightly when clicked */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2) inset; /* pressed-in look */
+    opacity: 0.85;
+}           
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+    gap: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#user-score, #computer-score {
+    font-size: 5rem;
+    color: #365475;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+#msg {
+    display: inline-block;   /* instead of inline */
+    font-size: 2rem;
+    background-color: rgb(54, 84, 117);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease; /* smooth color change */
+}
+
